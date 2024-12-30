@@ -317,7 +317,7 @@
                 createAnotherBtn.textContent = 'Create Another Account';
                 createAnotherBtn.onclick = function() {
                     // Reset form
-                    window.Telegram.WebApp.sendData(JSON.stringify("create_account"));
+                    window.Telegram.WebApp.sendData(JSON.stringify(new_account_name));
                     document.getElementById('accountForm').reset();
                     document.getElementById('accountForm').style.display = 'block';
                     keysContainer.style.display = 'none';
